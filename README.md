@@ -74,6 +74,7 @@ Launch the application:
 # Enhance security - FortiRule (https)
 
 # Take the application further
+Démarrage auto srv
 
 # What the application does not do
 Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.

@@ -8,7 +8,7 @@
 # Description
 FortiRule is a Node.js App to update TXT files used by FortiGate Threat feeds connector to dynamically import an external block list from an HTTP server.
 
-But also to authorize a website, domain, or any IP address.
+But also to authorize a website, domain, or any IPv4/IPv6 address.
 
 Depending on your time interval to refresh the external resource configured (refresh rate), the applicable threat feed could be done within a minute (default = 5 minutes).
 
@@ -31,4 +31,48 @@ This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5
   - check for duplicates (no changes are applied, a message displays the duplicates lines),
   - automatic backup and cleanup function (retain the last 5 versions of each file with timestamping).
 
-# Prerequisites
+# Prerequisites & Installation - FortiRule (http)
+The FortiRule deployment has been validated on Ubuntu and Debian (latest versions of 64bits). But it should work on other Linux OS as well.
+
+Your server needs to have internet access or access to a local mirror to install the packages.
+
+As an example, here's the procedure to install it on a fresh Debian 12 (root):
+(and choose SSH + Web server modules during the OS installation)
+```
+apt update && apt upgrade
+apt install nodejs npm -y
+nodejs --version && npm --version
+```
+Now, clone the GitHub repository into the root directory of Apache2 (by default "/var/www/html/"):
+```
+cd /var/www/html/
+git clone https://github.com/choupit0/FortiRule.git
+```
+Installation of NPM packages:
+```
+cd /var/www/html/fortirule/srv-nodejs
+npm install express http fs fs-extra moment-timezone helmet
+
+```
+Provide the IP address or FQDN of your server hosting this Node.js application:
+
+Line 80 from the Javascript file "/var/www/html/fortirule/js/script.js".
+```
+vi /var/www/html/fortirule/js/script.js
+:%s/fqdn_or_ip/[Please, enter your server IP/FQDN here.]/
+:wq
+```
+Launch the application:
+```
+/usr/bin/node /var/www/html/fortirule/srv-nodejs/server.js
+```
+
+# Prerequisites & Configuration - FortiGate
+
+# Enhance security - FortiRule (https)
+
+# Take the application further
+
+# What the application does not do
+Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
+

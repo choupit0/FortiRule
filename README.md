@@ -36,7 +36,7 @@ The FortiRule deployment has been validated on Ubuntu and Debian (latest version
 
 Your server needs to have internet access or access to a local mirror to install the packages.
 
-Remember to open TCP ports 3000 and 80 (http) if there's a firewall between the client and the server.
+Remember to open TCP ports 3000 (Node.js server) and 80 (Apache2, http) if there's a firewall between the client and the server.
 
 As an example, here's the procedure to install it on a fresh Debian 12 (root):
 (and choose SSH + Web server modules during the OS installation)

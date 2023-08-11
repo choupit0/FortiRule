@@ -68,6 +68,9 @@ Launch the application:
 ```
 /usr/bin/node /var/www/html/fortirule/srv-nodejs/server.js
 ```
+The application is now accessible and fully functional from this URL:
+```
+```
 
 # Prerequisites & Configuration - FortiGate
 

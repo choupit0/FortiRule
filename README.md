@@ -29,6 +29,6 @@ This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5
   - creating files on-the-fly if they don't exist,
   - concatenate the new data with the existing content,
   - check for duplicates (no changes are applied, a message displays the duplicates lines),
-  - automatic backup and cleanup function (retain the last 5 versions of each file).
+  - automatic backup and cleanup function (retain the last 5 versions of each file with timestamping).
 
 # Prerequisites

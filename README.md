@@ -16,7 +16,7 @@ Depending on your time interval to refresh the external resource configured (ref
 This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5 model. Of course, there was a code review afterward and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
 # Features
-Time-saving, it avoids connecting to the server to make changes in the files and reduces errors:
+**Time-saving, it avoids connecting to the server to make changes in the files and reduces errors:**
 
 - Updating and formatting plain text files with UTC timestamping (adding only)
 - Viewing plain text files (existing content and latest addition)

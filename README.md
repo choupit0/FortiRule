@@ -47,8 +47,7 @@ Your server needs to have internet access or access to a local mirror to install
 
 Remember to open TCP ports 3000 (Node.js server) and 80 (Apache2, http) if there's a firewall between the client and the server.
 
-As an example, here's the procedure to install it on a fresh Debian 12 (root):
-(and choose SSH + Web server modules during the OS installation)
+As an example, here's the procedure to install it on a fresh Debian 12 (as root, and choose SSH + Web server modules during the OS installation):
 ```
 apt update && apt upgrade
 apt install nodejs npm -y
@@ -63,11 +62,8 @@ Installation of NPM packages:
 ```
 cd /var/www/html/fortirule/srv-nodejs
 npm install express http fs fs-extra moment-timezone helmet
-
 ```
-Provide the IP address or FQDN of your server hosting this Node.js application:
-
-Line 80 from the Javascript file "/var/www/html/fortirule/js/script.js".
+Provide the IP address or FQDN of your server hosting this Node.js application, line 80 from the Javascript file "/var/www/html/fortirule/js/script.js":
 ```
 vi /var/www/html/fortirule/js/script.js
 :%s/fqdn_or_ip/[Please, enter your server IP/FQDN here.]/
@@ -79,6 +75,7 @@ Launch the application:
 ```
 The application is now accessible and fully functional from this URL:
 ```
+http://[your server IP/FQDN]/fortirule/
 ```
 # Prerequisites & Configuration - FortiGate
 

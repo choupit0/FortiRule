@@ -16,6 +16,8 @@ Depending on your time interval to refresh the external resource configured (ref
 This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5 model. Of course, there was a code review afterward and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
 # Features
+Time-saving, it avoids connecting to the server for each change and reduces errors:
+
 - Updating and formatting text files (adding only)
 - Viewing text files (existing content and latest addition)
 - 4 text files to manage blocking threats or unblocking sites
@@ -23,13 +25,16 @@ This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5
   - no empty fields,
   - ensure that IPv4/IPv6 addresses & URLs/domains are in the correct format (a message displays the lines with errors.),
   - ensure that we have the correct data in the right file (e.g., no IPs in a file meant for URLs),
-  - check for duplicates (a message displays the duplicates lines).
+  - check for duplicates (a message displays the duplicates lines),
 - Request for confirmation before making the change
 - Content control after insertion:
   - creating files on-the-fly if they don't exist,
   - concatenate the new data with the existing content,
   - check for duplicates (no changes are applied, a message displays the duplicates lines),
   - automatic backup and cleanup function (retain the last 5 versions of each file with timestamping).
+- Mobile-compatible site
+
+
 
 # Prerequisites & Installation - FortiRule (http)
 The FortiRule deployment has been validated on Ubuntu and Debian (latest versions of 64bits). But it should work on other Linux OS as well.
@@ -71,8 +76,10 @@ Launch the application:
 The application is now accessible and fully functional from this URL:
 ```
 ```
-
 # Prerequisites & Configuration - FortiGate
+
+# Explanatory diagram
+TODO
 
 # Enhance security - FortiRule (https)
 

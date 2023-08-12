@@ -18,8 +18,8 @@ This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5
 # Features
 Time-saving, it avoids connecting to the server for each change and reduces errors:
 
-- Updating and formatting text files (adding only)
-- Viewing text files (existing content and latest addition)
+- Updating and formatting plain text files with UTC timestamping (adding only)
+- Viewing plain text files (existing content and latest addition)
 - 4 text files to manage blocking threats or unblocking sites
 - Content control before insertion:
   - no empty fields,
@@ -31,10 +31,12 @@ Time-saving, it avoids connecting to the server for each change and reduces erro
   - creating files on-the-fly if they don't exist,
   - concatenate the new data with the existing content,
   - check for duplicates (no changes are applied, a message displays the duplicates lines),
-  - automatic backup and cleanup function (retain the last 5 versions of each file with timestamping).
+  - automatic backup and cleanup function (retain the last 5 versions of each file with UTC timestamping).
 - Mobile-compatible site
 
+![Web_page](screenshots/FortiRule_Mobile_Demo.png)
 
+![Backend](screenshots/FortiRule_Backend.png)
 
 # Prerequisites & Installation - FortiRule (http)
 The FortiRule deployment has been validated on Ubuntu and Debian (latest versions of 64bits). But it should work on other Linux OS as well.

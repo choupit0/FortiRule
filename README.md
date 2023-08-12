@@ -32,9 +32,11 @@ Time-saving, it avoids connecting to the server for each change and reduces erro
   - concatenate the new data with the existing content,
   - check for duplicates (no changes are applied, a message displays the duplicates lines),
   - automatic backup and cleanup function (retain the last 5 versions of each file with UTC timestamping).
-- Mobile-compatible site
+- Mobile-compatible site:
 
 ![Web_page](screenshots/FortiRule_Mobile_Demo.png)
+
+On the server:
 
 ![Backend](screenshots/FortiRule_Backend.png)
 

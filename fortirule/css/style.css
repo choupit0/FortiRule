@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h2 {
+  margin-top: 0;
+  color: #B8860B;
+}
+
+p {
+  margin-top: 0;
+}
+
+h4 {
+  margin-top: 0;
+  text-align: center;
+  white-space: pre-wrap;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #B8860B;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0px;
+}
+
+#message {
+  margin-top: 10px;
+  text-align: center;
+  color: #FF6347;
+}
+
+.green-option {
+  /*background-color: #228B22;*/
+  color: green;
+  /*color: white;*/
+}
+
+.red-option {
+  /*background-color: #B22222;*/
+  color: red;
+  /*color: white;*/
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-allow {
+  background-color: #228B22;
+}
+
+.button-deny {
+  background-color: #B22222;
+}
+
+.button-allow,
+.button-deny {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 140px;
+  height: 35px;
+  margin: 5px;
+  text-decoration: none;
+}
+

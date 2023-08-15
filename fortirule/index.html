@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FortiRule</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <h2>FortiRule</h2>
+  <h4>Blocking any external threat on the firewalls</h4>
+
+  <div id="message"></div>
+
+  <form id="form">
+    <label for="action"><b>Action:</b></label>
+    <select id="action" name="action">
+      <option value="">Choose an action</option>
+      <option value="Authorize_IP" class="green-option">Authorize an IP address</option>
+      <option value="Authorize_domain" class="green-option">Authorize a domain name/URL</option>
+      <option value="Block_IP" class="red-option">Block an IP address (Threat-Feeds)</option>
+      <option value="Block_domain" class="red-option">Block a domain name/URL (Threat-Feeds)</option>
+    </select>
+
+    <label for="comment"><b>Comment:</b></label>
+    <input type="text" id="comment" name="comment" required>
+
+    <label for="content"><b>Content (one item per line):</b></label>
+    <textarea id="content" name="content" rows="8" required></textarea>
+
+    <button type="submit">Add</button>
+  </form>
+
+
+  <p style="font-size: 16px;"><b>Files:</b></p>
+  <p style="font-size: 11px;">(Press F5 to view changes if necessary.)</p>
+
+  <div class="link-grid">
+    <div class="button-container">
+      <a href="files/IP-To-Authorize.txt" target="_blank" class="button-allow">Authorized IP addresses</a>
+    </div>
+    <div class="button-container">
+      <a href="files/URL-Category-To-Authorize.txt" target="_blank" class="button-allow">Authorized URLs/domains</a>
+    </div>
+    <div class="button-container">
+      <a href="files/IP-To-Block.txt" target="_blank" class="button-deny">Blocked IP addresses</a>
+    </div>
+    <div class="button-container">
+      <a href="files/URL-Category-To-Block.txt" target="_blank" class="button-deny">Blocked URLs/domains</a>
+    </div>
+  </div>
+
+  <p style="font-size: 12px; margin-top: 10px;">Environment: <b>Testing</b></span></p>
+  
+  <p style="font-size: 12px; margin-top: 10px;">Application version: <span id="appVersion">FortiRule 1.0.0</span></p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

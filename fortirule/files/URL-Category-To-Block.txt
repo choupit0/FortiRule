@@ -1,0 +1,9 @@
+# Example:
+# https://example.com
+# https://example.com/url
+# http://example.com:8080/url
+# And compatible with Domain Filtering (use Proxy Based on the firewall policy):
+# *.lapresse.ca
+# amazon.ca
+# Last update [ddmmyyyy-hms] Ex: 01062023-095732
+################################################

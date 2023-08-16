@@ -18,21 +18,21 @@ This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5
 # Features
 **Time-saving, it avoids connecting to the server to make changes in the files and reduces errors:**
 
-- Updating and formatting plain text files with UTC timestamping (adding only)
-- Viewing plain text files (existing content and latest addition)
-- 4 text files to manage blocking threats or unblocking sites
-- Content control before insertion:
+- **Updating and formatting plain text files** with UTC timestamping (adding only)
+- **Viewing plain text files** (existing content and latest addition)
+- 4 text files to **manage blocking threats or unblocking sites**
+- **Content control before insertion**:
   - no empty fields,
   - ensure that IPv4/IPv6 addresses & URLs/domains are in the correct format (a message displays the lines with errors.),
   - ensure that we have the correct data in the right file (e.g., no IPs in a file meant for URLs),
   - check for duplicates (a message displays the duplicates lines),
-- Request for confirmation before making the change
-- Content control after insertion:
+- **Request for confirmation before making the change**
+- **Content control after insertion**:
   - creating files on-the-fly if they don't exist,
   - concatenate the new data with the existing content,
   - check for duplicates (no changes are applied, a message displays the duplicates lines),
   - automatic backup and cleanup function (retain the last 5 versions of each file with UTC timestamping).
-- Mobile-compatible site:
+- **Mobile-compatible site**:
 
 ![Web_page](screenshots/FortiRule_Mobile_Demo.png)
 

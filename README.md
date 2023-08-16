@@ -111,16 +111,16 @@ end
 
 I always create these connectors at the "Global" level to use them later in the VDOMs.
 
-TO be continued...
+**To be continued...**
 
 # Explanatory diagram
-Coming soon.
+**Coming soon.**
 
 # Enhance security - FortiRule (https)
-Coming soon.
+**Coming soon.**
 
 # Take the application further
-Coming soon.
+**Coming soon.**
 
 # What the application does not do
 Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.

@@ -23,7 +23,7 @@ This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5
 - 4 text files to **manage blocking threats or unblocking sites**
 - **Content control before insertion**:
   - no empty fields,
-  - ensure that IPv4/IPv6 addresses & URLs/domains are in the correct format (a message displays the lines with errors.),
+  - ensure that IPv4/IPv6 addresses & URLs/domains are in the correct format (a message displays the lines with errors),
   - ensure that we have the correct data in the right file (e.g., no IPs in a file meant for URLs),
   - check for duplicates (a message displays the duplicates lines),
 - **Request for confirmation before making the change**

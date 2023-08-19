@@ -120,8 +120,33 @@ I always create these connectors at the "Global" level to use them later in the 
 **Coming soon.**
 
 # Take the application further
-**Coming soon.**
+**Automatic startup of the application using systemd:**
+```
+vi /etc/systemd/system/fortirule.service
+```
+Code:
+```
+[Service]
+Environment=NODE_ENV=production
+Environment=NODE_PORT=3000
+WorkingDirectory=/var/www/html/fortirule/srv-nodejs
+ExecStart=/usr/bin/node /var/www/html/fortirule/srv-nodejs/server.js
+Restart=always
 
+[Install]
+WantedBy=multi-user.target
+```
+Save and exit Vi:
+```
+:wq!
+```
+Applying changes, enabling the service, and then starting the application:
+```
+systemctl daemon-reload
+systemctl enable fortirule.service
+systemctl start fortirule
+systemctl status fortirule
+```
 # What the application does not do
 Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
 

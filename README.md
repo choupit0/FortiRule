@@ -117,8 +117,39 @@ I always create these connectors at the "Global" level to use them later in the 
 **Coming soon.**
 
 # Enhance security - FortiRule (https)
-**Coming soon.**
+**To encrypt communications, we need to use the HTTPS protocol both at the application level and the Apache2 server level; otherwise, it won't work.**
 
+**Apache2:**
+Let's enable the SSL module for Apache and SSL site:
+```
+npm install https
+a2enmod ssl
+a2ensite default-ssl
+```
+For the exercise, we will use our own certificate (use your own issuing CA for added security and to avoid alerts):
+```
+cd /var/www/html/fortirule
+mkdir -p ssl ssl/{cert,private}
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out self.crt
+mv self.crt ssl/cert/ && mv private.key ssl/private/
+```
+Updating the Apache2 sites (Adding paths to the certificate and private key, and redirecting HTTP to HTTPS):
+```
+vi /etc/apache2/sites-available/default-ssl.conf
+```
+
+```
+vi /etc/apache2/sites-available/000-default.conf
+```
+Reload Apache2:
+```
+systemctl reload apache2
+```
+**FortiRule:**
+```
+cd /var/www/html/fortirule/srv-nodejs
+npm install https
+```
 # Take the application further
 **Automatic startup of the application using systemd:**
 ```

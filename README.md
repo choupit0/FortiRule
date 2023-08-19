@@ -13,7 +13,7 @@ But also to authorize a website, domain, or any IPv4/IPv6 address.
 Depending on your time interval to refresh the external resource configured (refresh rate), the applicable threat feed could be done within a minute (default = 5 minutes).
 
 # Application development
-This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5 model. Of course, there was a code review afterward and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
+This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
 # Features
 **Time-saving, it avoids connecting to the server to make changes in the files and reduces errors:**

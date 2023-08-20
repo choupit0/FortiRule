@@ -57,8 +57,10 @@ nodejs --version && npm --version
 ```
 Now, clone the GitHub repository into the root directory of Apache2 (by default "/var/www/html/"):
 ```
-cd /var/www/html/
+cd /tmp/
 git clone https://github.com/choupit0/FortiRule.git
+cd FortiRule
+mv fortirule/ /var/www/html/
 ```
 Installation of NPM packages:
 ```

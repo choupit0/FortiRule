@@ -114,7 +114,7 @@ I always create these connectors at the "Global" level to use them later in the 
 **To be continued...**
 
 # Explanatory diagram
-**Coming soon.**
+**To be continued...**
 
 # Enhance security - FortiRule (https)
 **To encrypt communications, we need to use the HTTPS protocol both at the application level and the Apache2 server level; otherwise, it won't work.**
@@ -212,6 +212,8 @@ To check the status of the service and/or the content of the service:
 systemctl status fortirule
 systemctl cat fortirule
 ```
+**To be continued...**
+
 # What the application does not do
 Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
 

@@ -215,5 +215,7 @@ systemctl cat fortirule
 **To be continued...**
 
 # What the application does not do
-Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
+> __Warning__
+>
+> Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
 

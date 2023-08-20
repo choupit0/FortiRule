@@ -127,7 +127,7 @@ npm install https
 a2enmod ssl
 a2ensite default-ssl
 ```
-For the exercise, we will use our own certificate (use your own issuing CA for added security and to avoid alerts):
+For the exercise, we will use our own certificate without password (use your own issuing CA for added security and to avoid alerts):
 ```
 cd /var/www/html/fortirule
 mkdir -p ssl ssl/{cert,private}
@@ -154,7 +154,7 @@ Then reload Apache2:
 ```
 systemctl reload apache2
 ```
-The application is now accessible and fully functional from this new URL:
+The application is now accessible from this new URL:
 ```
 https://[your server IP/FQDN]/fortirule/
 ```
@@ -165,7 +165,21 @@ Let's install the HTTPS module:
 cd /var/www/html/fortirule/srv-nodejs
 npm install https
 ```
-
+We can now edit the second SSL server and add the path to the certificate and private key (lines 17 and 18) :
+```
+vi /var/www/html/fortirule/srv-nodejs/server-ssl.js
+key: fs.readFileSync('/var/www/html/fortirule/ssl/private/private.key', 'utf8'),
+cert: fs.readFileSync('/var/www/html/fortirule/ssl/certs/self.crt', 'utf8')
+:wq
+```
+Launch the application:
+```
+/usr/bin/node /var/www/html/fortirule/srv-nodejs/server-ssl.js
+```
+The application is now accessible and fully functional from this URL:
+```
+https://[your server IP/FQDN]/fortirule/
+```
 # Take the application further
 
 ### Automatic startup of the application using systemd:
@@ -180,7 +194,7 @@ And add this content, save and exit Vi:
 Environment=NODE_ENV=production
 Environment=NODE_PORT=3000
 WorkingDirectory=/var/www/html/fortirule/srv-nodejs
-ExecStart=/usr/bin/node /var/www/html/fortirule/srv-nodejs/server.js
+ExecStart=/usr/bin/node /var/www/html/fortirule/srv-nodejs/server-ssl.js
 Restart=always
 
 [Install]

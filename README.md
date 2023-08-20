@@ -6,14 +6,14 @@
 
 **Easily manage blocking any external threat across all your FortiGate firewalls within a minute.**
 # Description
-FortiRule is a Node.js App to update plain text files used by FortiGate Threat feeds connector to dynamically import an external block list from an HTTP server.
+FortiRule is a Node.js App to update plain text files used by [FortiGate Threat feeds connector](https://docs.fortinet.com/document/fortigate/7.0.1/administration-guide/9463/threat-feeds) to dynamically import an external block list from an HTTP server.
 
 But also to authorize a website, domain, or any IPv4/IPv6 address.
 
 Depending on your time interval to refresh the external resource configured (refresh rate), the applicable threat feed could be done within a minute (default = 5 minutes).
 
 # Application development
-This App was largely made with the help of ChatGPT from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
+This App was largely made with the help of [ChatGPT](https://chat.openai.com/) from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
 # Features
 **Time-saving, it avoids connecting to the server to make changes in the files and reduces errors:**

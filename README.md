@@ -176,7 +176,7 @@ Launch the application:
 ```
 /usr/bin/node /var/www/html/fortirule/srv-nodejs/server-ssl.js
 ```
-The application is now accessible and fully functional from this URL:
+The application is now accessible and fully functional from this new URL:
 ```
 https://[your server IP/FQDN]/fortirule/
 ```

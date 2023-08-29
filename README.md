@@ -15,7 +15,7 @@ Depending on your time interval to refresh the external resource configured (ref
 # Application development
 > __NOTE__
 >
-> This App was largely made with the help of [ChatGPT](https://chat.openai.com/) from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
+> This App was largely made with the help of [ChatGPT](https://chat.openai.com/) from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and few security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
 # Features
 **Time-saving, it avoids connecting to the Web server to make changes in the files and reduces errors:**
@@ -222,4 +222,7 @@ systemctl cat fortirule
 > __Warning__
 >
 > Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
+
+# To Do
+Enhance security and better filter/control server-side input data.
 

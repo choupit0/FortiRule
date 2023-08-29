@@ -13,7 +13,7 @@ But also to authorize a website, domain, or any IPv4/IPv6 address.
 Depending on your time interval to refresh the external resource configured (refresh rate), the applicable threat feed could be done within a minute (default = 5 minutes).
 
 # Application development
-> __NOTE__
+> __Warning__
 >
 > This App was largely made with the help of [ChatGPT](https://chat.openai.com/) from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and few security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
@@ -219,7 +219,7 @@ systemctl cat fortirule
 **To be continued...**
 
 # What the application does not do
-> __Warning__
+> __Note__
 >
 > Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
 

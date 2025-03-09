@@ -1,10 +1,14 @@
-# FortiRule 🔥
+<p align="center">
+  <img src="https://github.com/choupit0/FortiRule/blob/master/screenshots/FortiRule_Logo%20-%20IA%20Mistral.png" width="300" alt="FortiRule logo">
+</p>
+
+**FortiRule 🔥 - Easily manage blocking any external threat across all your FortiGate firewalls within a minute.**
+
 [![Generic badge](https://img.shields.io/badge/Version-1.0.0-<COLOR>.svg)](https://github.com/choupit0/FortiRule/releases/tag/v1.0.0)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/choupit0/FortiRule/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/choupit0/FortiRule/graphs/commit-activity)
 [![made-with-bash](https://img.shields.io/badge/Made%20with-ChatGPT-1f425f.svg)](https://chat.openai.com/)
 
-**Easily manage blocking any external threat across all your FortiGate firewalls within a minute.**
 # 🌟 Description
 FortiRule is a Node.js App to update plain text files used by [FortiGate Threat feeds connector](https://docs.fortinet.com/document/fortigate/7.0.1/administration-guide/9463/threat-feeds) to dynamically import an external block list from an HTTP server.
 

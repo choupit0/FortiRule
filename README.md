@@ -22,23 +22,31 @@ Depending on your time interval to refresh the external resource configured (ref
 > This App was largely made with the help of [ChatGPT](https://chat.openai.com/) from OpenAI, based on GPT-3.5 model. NPM package.json file were audited with [AuditJS](https://github.com/sonatype-nexus-community/auditjs) and few security hardening was performed. But I'm not a full-time Node.js developer, so please be understanding ;) I have documented the code as best as I could.
 
 # 🎯 Features
-**Time-saving, it avoids connecting to the Web server to make changes in the files and reduces errors:**
+### Efficient File Management
+- **Time-Saving**: Avoids the need to connect to the web server for file changes, reducing errors and saving time.
+- **UTC Timestamping**: Automatically adds UTC timestamps when updating and formatting plain text files.
+- **Content Viewing**: Easily view existing content and the latest additions in plain text files.
 
-- **Updating and formatting plain text files** with UTC timestamping (adding only)
-- **Viewing plain text files** (existing content and latest addition)
-- 4 text files to **manage blocking threats or unblocking sites**
-- **Content control before insertion**:
-  - no empty fields,
-  - ensure that IPv4/IPv6 addresses & URLs/domains are in the correct format (a message displays the lines with errors),
-  - ensure that we have the correct data in the right file (e.g., no IPs in a file meant for URLs),
-  - check for duplicates (a message displays the duplicates lines),
-- **Request for confirmation before making the change**
-- **Content control after insertion**:
-  - creating files on-the-fly if they don't exist,
-  - concatenate the new data with the existing content,
-  - check for duplicates (no changes are applied, a message displays the duplicates lines),
-  - automatic backup and cleanup function (retain the last 5 versions of each file with UTC timestamping).
-- **Mobile-compatible site**:
+### Threat Management
+- **Blocking and Unblocking**: Manage threats by blocking or unblocking sites using four dedicated text files.
+- **Content Validation**:
+  - Ensures no empty fields.
+  - Validates IPv4/IPv6 addresses and URLs/domains for correct formatting.
+  - Displays error messages for incorrect data or misplaced entries (e.g., no IPs in URL files).
+  - Checks for and displays duplicate entries.
+
+### Content Control
+- **Pre-Insertion Checks**:
+  - Requests confirmation before applying changes.
+  - Ensures data integrity by validating content before insertion.
+- **Post-Insertion Management**:
+  - Creates files on-the-fly if they don't exist.
+  - Concatenates new data with existing content.
+  - Prevents duplicate entries and displays duplicate lines without applying changes.
+  - Automatic backup and cleanup, retaining the last 5 versions of each file with UTC timestamps.
+
+### Mobile Compatibility
+- **Responsive Design**: The site is mobile-compatible, allowing for easy management and viewing on mobile devices.
 
 <p align="center">
   <img src="https://github.com/choupit0/FortiRule/blob/master/screenshots/FortiRule_Mobile_Demo.png" width="512" alt="Web page">

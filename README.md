@@ -210,9 +210,9 @@ Note: It is generally advisable to avoid using traffic inspection, as SOCs often
 **To be continued...**
 
 # 🔒 Enhance security
-**(https) To encrypt communications, we need to use the HTTPS protocol both at the application level and the Apache2 server level; otherwise, it won't work.**
+**We encrypt communications, we need to use the HTTPS protocol both at the application level and the Apache2 server level; otherwise, it won't work.**
 
-## Apache2:
+## Apache2 (https):
 
 Let's enable the SSL module for Apache and SSL site:
 ```
@@ -251,7 +251,7 @@ The application is now accessible from this new URL:
 ```
 https://[your server IP/FQDN]/fortirule/
 ```
-## Node.js:
+## Node.js (https):
 
 Let's install the HTTPS module:
 ```

@@ -303,6 +303,12 @@ config system external-resource
     next
 end
 ```
+Next, ensure that your FortiGate devices are able to connect and authenticate successfully:
+
+<p align="center">
+  <img src="https://github.com/choupit0/FortiRule/blob/master/screenshots/FortiRule_TF_Ext_Connectors_Status.png" width="800" alt="FortiRule TF Ext Connectors Status.png">
+</p>
+
 ## Dedicated user & group: fortirule
 **To be continued...**
 
@@ -349,5 +355,9 @@ systemctl cat fortirule
 > Currently, it's not possible to delete data within the files. And there's no file to handle the hash of malware, the fourth type of threat feeds.
 
 # ✅ To Do
-Enhance security and better filter/control server-side input data.
+- Enhance security and better filter/control server-side input data.
+- Enhance the README with examples and information on security hardening.
+- Plan for a Docker version of the application.
+- Be able to delete lines in files (?).
+- Add/display information regarding file size limits (provide a percentage).
 
